@@ -1,0 +1,36 @@
+my_project/
+    notebooks/
+        main.ipynb
+    data/
+        something.csv
+
+Let's say we are working in main.ipynb. The current location is within the "notebooks" directory, where your Jupyter notebook main.ipynb is located.
+
+To access the "data" directory, which is one level up from your current location, you use ../ in your file path.
+
+you are telling Python that you want to move up one level from the "notebooks" directory to the parent directory, which is "my_project," and then access the "data" directory. This is how you construct a relative path to your data directory.
+
+The resulting path, when you concatenate data_dir with a specific file name, allows you to access files within the "data" directory from your Jupyter notebook, even if the notebook is located in a different directory.
+
+
+
+
+Using ./ in a file path is a way to specify the current directory or the current location. It refers to the directory where your code or script is currently executing. Here's how you might use ./ in a file path:
+
+Current Directory: If you want to access a file in the same directory as your code, you can use ./ to specify the current directory. For example:
+
+data_file = "./my_data.csv"
+
+This tells Python to look for "my_data.csv" in the same directory where your code is located.
+
+Changing Directories: You can also use ./ to navigate to a subdirectory within your current directory. For example, if you have a subdirectory called "data" within your current directory, you can access a file within it like this:
+
+data_file = "./data/my_data.csv"
+
+data_file = "./data/my_data.csv"
+
+data_file = "./data/my_data.csv"
+
+This specifies that "my_data.csv" is located in the "data" subdirectory of your current directory.
+
+Using ./ is helpful when you want to specify a file path relative to the location of your code or script. It's especially useful when your code can be moved to different directories or when you want to ensure that your code accesses files in the same directory or a subdirectory.
